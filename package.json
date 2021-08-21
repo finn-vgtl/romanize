@@ -54,6 +54,13 @@
   },
   "homepage": "https://github.com/finn-vgtl/romanize#readme",
   "devDependencies": {
-    "jest": "^27.0.6"
+    "jest": "^27.0.6",
+    "semantic-release": "^17.4.5",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/github": "^7.2.3",
+    "@semantic-release/npm": "^7.1.3",
+    "@semantic-release/release-notes-generator": "^9.0.3"
   }
 }
