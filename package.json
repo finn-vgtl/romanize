@@ -1,0 +1,59 @@
+{
+  "name": "@finn-vgtl/romanzie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "CHANGELOG.md",
+    "package.json",
+    "package-lock.json"
+  ],
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/github",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "package.json",
+            "package-lock.json",
+            "CHANGELOG.md"
+          ],
+          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ]
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/finn-vgtl/romanize.git"
+  },
+  "keywords": [
+    "roman",
+    "decimal",
+    "convert"
+  ],
+  "author": "Finn Voigtländer <finn.voigtlaender@googlemail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/finn-vgtl/romanize/issues"
+  },
+  "homepage": "https://github.com/finn-vgtl/romanize#readme",
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
+}
