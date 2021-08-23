@@ -14,27 +14,26 @@ const MAP = {
   I: 1
 }
 
-const validroman = str =>
+const isRoman = str =>
   str && /^M*(?:D?C{0,3}|C[MD])(?:L?X{0,3}|X[CL])(?:V?I{0,3}|I[XV])$/i
     .test(String(+str))
 
-const romanize = num => {
-  if (isNaN(num)) return NaN;
-  
-  let roman = '';
+const romanize = number => {
+  if (!number || typeof number !== 'number' || isNaN(number)) return NaN;
+  let num = Math.abs(number), prefix = num !== number ? '-' : '', roman = '';
 
   for (const CHAR in MAP) {
     while (num >= MAP[CHAR])
       roman += CHAR, num -= MAP[CHAR];
   }
 
-  return roman;
+  return prefix + roman;
 }
 
 const deromanize = str => {
 	let arabic = 0, rxm;
 
-	if (!validroman(str)) return NaN;
+	if (!isRoman(str)) return NaN;
 
 	while (rxm = /[MDLV]|C[MD]?|X[CL]?|I[XV]?/gi.exec(str))
     arabic += MAP[rxm[0]];
@@ -43,7 +42,7 @@ const deromanize = str => {
 }
 
 module.exports = {
-  validroman,
+  isRoman,
   romanize,
   deromanize
 }
