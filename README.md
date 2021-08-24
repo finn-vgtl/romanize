@@ -9,3 +9,20 @@ Validate and convert roman numbers to and from arabic.
 ```bash
 npm i @finn-vgtl/romanize
 ```
+
+## Usage
+```js
+import { isRoman, romanize, deromanize } from '@finn-vgtl/romanize'
+// or
+const romanize = require('@finn-vgtl/romanize')
+
+// validate roman numbers
+isRoman('MMXXI') // true
+isRoman('ABC')   // false
+
+// romanize arabic numbers
+romanize(123) // "CXXIII"
+
+// deromanize roman numbers
+deromanize("CXXIII") // 123
+```
