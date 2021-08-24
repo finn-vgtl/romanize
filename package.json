@@ -1,13 +1,10 @@
 {
   "name": "@finn-vgtl/romanize",
   "version": "1.0.1",
-  "description": "",
+  "description": "Validate and convert roman numbers to and from arabic.",
   "main": "index.js",
   "files": [
-    "index.js",
-    "CHANGELOG.md",
-    "package.json",
-    "package-lock.json"
+    "index.js"
   ],
   "release": {
     "branches": [
@@ -27,7 +24,7 @@
             "package-lock.json",
             "CHANGELOG.md"
           ],
-          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+          "message": "chore(release): :rocket: ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
         }
       ]
     ]
@@ -43,9 +40,11 @@
     "url": "git+https://github.com/finn-vgtl/romanize.git"
   },
   "keywords": [
+    "validate",
+    "convert",
     "roman",
-    "decimal",
-    "convert"
+    "arabic",
+    "decimal"
   ],
   "author": "Finn Voigtländer <finn.voigtlaender@googlemail.com>",
   "license": "MIT",
