@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/finn-vgtl/romanize/compare/v1.0.1...v1.0.2) (2021-08-24)
+
+
+### Bug Fixes
+
+* :memo: missing usage readme ([5566001](https://github.com/finn-vgtl/romanize/commit/5566001c59d997cdad9e940864c6959a94312705))
+
 ## [1.0.1](https://github.com/finn-vgtl/romanize/compare/v1.0.0...v1.0.1) (2021-08-23)
 
 
